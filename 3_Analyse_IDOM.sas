@@ -35,7 +35,7 @@ libname library '&levothyroxine\dats';
 data q_atc;
 	attrib VAR_GRP length=$10 VAR_NAME length=$20 ATC length=$7 LABEL_NAME length=$22 TEXT length=$300 
 		   SUBSTRING length=4;
-	infile 'G:\NAKO_319\Ablage\20 DMP\Codelist\ATC.csv'
+	infile '&levothyroxine\dats\ATC.csv'
 			dlm=';' missover DSD firstobs=2 lrecl=1000 termstr=CRLF;
 	input VAR_GRP VAR_NAME ATC LABEL_NAME TEXT SUBSTRING;
 run;

@@ -37,7 +37,7 @@ if (!dir.exists(folder_path)) {
 
 
 # Load dataset ------------------------------------------------------------
-main <- read_sas("G:/NAKO_319/Auswertung/Brandes/dats/r_final.sas7bdat")
+main <- read_sas("dats/r_final.sas7bdat")
 
 # Define custom palette for plot
 my_colors_plot <- c(
